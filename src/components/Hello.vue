@@ -1,9 +1,6 @@
 <template>
   <div class="hello">
-    <button type="button" name="button"></button>
-    <ul>
-      <li v-for='user in info'>{{ user.name }}</li>
-    </ul>
+    <div id="firebaseui-auth-container"></div>
   </div>
 </template>
 
@@ -15,7 +12,7 @@
 
 export default {
   name: 'hello',
-  props: ['info'],
+  props: ['user', 'loggedOn'],
   data() {
     return {
       msg: 'swag',
