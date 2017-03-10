@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <button type="button" name="button"></button>
+    <ul>
+      <li v-for='user in info'>{{ user.name }}</li>
+    </ul>
   </div>
 </template>
 
@@ -27,6 +30,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 90vh;
+    flex-direction: column;
   }
 
   button {
